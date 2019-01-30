@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bgimage {
+    background-image: url("../../assets/images/bg-image.jpg");
+    width: 94.95rem;
+    height: 75rem;
+
+    background-position: center;
+    background-size: cover;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header {
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60rem;
+    height: 5rem;
+    color: rgb(58, 56, 56);
+    position: fixed;
+    top: 0;
+
+    border-style: solid;
+    border-color:  rgb(196, 192, 192);
+    border-width: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(58, 56, 56);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    background-color: rgb(11, 158, 158);
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color:  rgb(196, 192, 192);
+    border-width: 1px;
+    color: rgb(58, 56, 56);
+
+    margin-top: 7rem;
+    width: 60rem;
+    height: 60rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content h2, .contact h2 {
+    color:  rgb(11, 158, 158);
+    padding: 1.5rem;
+}
+
+.footer {
+    background-color:  rgb(58, 56, 56);
+    color: rgb(214, 213, 211);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 5rem;
+    width: 60rem;
+    
+    margin-top: 3rem;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color:  rgb(11, 158, 158);
+
+    /*position: fixed;
+    bottom: 0;*/
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    color: rgb(58, 56, 56);
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.5rem;
+
+}
+
+.textbox {
+    line-height: 1.5rem;
+    width: 50rem;
+    margin-bottom: 3rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    width: 50rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    line-height: 2.5rem;
+    width: 7rem;
+    background-color:  rgb(11, 158, 158);
+    color: antiquewhite;
+}
