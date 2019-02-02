@@ -82,7 +82,7 @@ div.pimg3 {
 .section {
     text-align: center;
     padding: 50px 80px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
 }
 
 .section-dark {
@@ -172,7 +172,7 @@ div.pimg3 {
     text-align: center;
     text-decoration: none;
     margin: 5px 4px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
   }
   
   .fa:hover {
