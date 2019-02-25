@@ -1,213 +1,176 @@
-
-/* This section is to default the styling 
-for the entire page */
-
-body, html {
-    height: 100%;
-    margin: 0;
-
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.8rem;
-
-    color: rgba(151, 146, 146, 0.753);
-}
-
-/* Image styling for Parallax scroll */
-
-body > div.pimg1,
-body > div.pimg2,
-body > div.pimg3 {
-    position: relative;
-
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-/* This is just for the portfolio image to not center position it*/
-
-body > div.pimg {
-    position: relative;
-    background-size:cover;
-    background-repeat: no-repeat;
+/* This section is to remove padding from the container-fluid class */
+.container-fluid {
+  padding: 0;
 }
 
 /* Background Images */
 
-div.pimg {
-    background: url("../images/MyPortfolioPic.jpg");
-    height: 100vh;
-    width: 98.9vw;
+.bgimg1 {
+  background-image: url("../images/air_balloon.jpg");
+  height: 100vh;
+  letter-spacing: 0.2rem;
 }
 
-/* div.pimg1 {
-    background: url("../images/img_1.jpg");
-    min-height: 400px;
+.bgimg2 {
+  background: url("../images/whitewall.jpeg");
+  min-height: 300px;
+}
+
+.bgimg3 {
+  background: url("../images/Contact.jpg");
+  min-height: 300px;
+}
+
+.bgimg1,
+.bgimg2,
+.bgimg3 {
+  position: relative;
+
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  color: rgb(4, 194, 201);
+  text-shadow: 1px 1px 1px #000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio {
+  background-color: #343a40;
+}
+
+h2 {
+  color: rgb(4, 194, 201);
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.capbrdr {
+  background-color: rgba(52, 58, 64, 0.5);
+  color: rgb(4, 194, 201);
+  padding: 1rem;
+}
+
+.img-thumbnail {
+  padding: 0;
+  /* border: 1px solid rgb(4, 194, 201); */
+  border: 0;
+}
+
+/* .img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 170, 170);
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+  transform: rotate(-5deg);
+  transition: 0.7s ease;
+}
+
+.overlay span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
 } */
 
-div.pimg2 {
-    background: url("../images/img_2.jpg");
-    min-height: 400px;
+p {
+  font-size: 1.8 rem;
+  line-height: 1.8rem;
 }
 
-div.pimg3 {
-    background: url("../images/img_3.jpg");
-    min-height: 300px;
+.grad {
+  background-image: linear-gradient(to right, rgba(113, 116, 119, 0), rgba(52, 58, 64, 1));
 }
 
-/* This is the for the caption that appears on the images */
-
-.caption {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: rgb(11, 11, 51);
-    font-size: 1.6rem;
-    letter-spacing: .3rem;
-    text-transform: uppercase;
-    font-weight: bold;
+.portfolio > .row > .column > a > img:hover {
+  box-shadow: 2px 2px 2px rgb(4, 194, 201);
+  transform: rotate(-5deg);
+  transition: 0.7s ease;
 }
 
-.caption .border {
-    background-color: rgba(255,255,255,0.7);
-    color: rgb(11, 11, 51);
-    padding: 1rem;
+li a:hover {
+  box-shadow: 2px 2px 2px rgb(4, 194, 201);
 }
 
-/* This is for sections in between images */
-
-.section {
-    text-align: center;
-    padding: 50px 80px;
-    letter-spacing: 0.05rem;
-}
-
-.section-dark {
-    background-color: rgb(49, 9, 49);
-    color: aliceblue;
-}
-
-/* .section-light {
-    background-color: aliceblue;
-    color:  rgb(13, 13, 49);
+/* .footer {
+  position: relative;
+  z-index: 1;
 } */
-
-/* body > section > img {
-    height: 45vh;
-    width: 45vh;
-} */
-
-/* This is just for the My Work section using flex display*/
-
-#workSection {
-    background-color: rgb(49, 9, 49);
-    color: whitesmoke;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* This is for the squares within the My Work section */
-
-.square_1 {
-    height: 8rem;
-    width: 8rem;
-    margin: 2rem;
-    color: whitesmoke;
-    border-radius: 20%;
-    border: 1px solid whitesmoke;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* .square_2 {
-    height: 8rem;
-    width: 8rem;
-    background-color: rgb(148, 77, 199);
-    margin: 2rem;
-    color: rgb(14, 14, 44);
-    border-radius: 15%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* Getting rid of text decorations for hyperlinks */
-
-.square_1 a {
-    text-decoration: none;
-    color: whitesmoke;
-    letter-spacing: 0.05rem;
-}
-
-/* Just some hover effect for the squares in My Work */
-
-.square_1:hover {
-    font-weight: bold;
-    border: 1px solid purple;
-}
 
 /* This is for the Contact Me section using flex to position icons */
 
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Font Awesome Icons for Contact me section */
 
 .fa {
-    padding: 15px;
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 4px;
-    /* border-radius: 50%; */
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: rgb(58, 86, 148);
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: rgb(85, 169, 233);
-    color: white;
-  }
-  
-  .fa-envelope {
-    background: rgb(41, 58, 94);
-    color: rgb(162, 224, 62);
-  }
-  
-  .fa-linkedin {
-    background: #067db4;
-    color: white;
-  }
-
-  /* When viewed on a phone the images will scroll with the page */
-
-  @media (width: 560px) {
-    body > div.pimg,
-    body > div.pimg1,
-    body > div.pimg2,
-    body > div.pimg3 {
-        background-attachment: scroll;
-    }
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
 }
-  
+
+.fa:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.fa-facebook {
+  background: rgb(58, 86, 148);
+  color: white;
+}
+
+.fa-twitter {
+  background: rgb(85, 169, 233);
+  color: white;
+}
+
+.fa-envelope {
+  background: rgb(41, 58, 94);
+  color: white;
+}
+
+.fa-linkedin {
+  background: #067db4;
+  color: white;
+}
+
+.fa-copyright {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Reduce the height of bgimage sections on small screens */
+
+@media screen and (max-width: 768px) {
+  .bgimg2,
+  .bgimg3 {
+    background-attachment: scroll;
+    min-height: 150px;
+  }
+}

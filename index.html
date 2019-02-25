@@ -1,56 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <title>Shyam</title>
-</head>
+  </head>
 
-<body>
-    <div class="pimg">
-        <div class="caption">
-            <span class="border">Hey, I'm Shyam</span>
+  <body>
+    <div class="container-fluid">
+      <div class="row bgimg1" id="home">
+        <div class="column col-12 d-flex flex-column justify-content-center align-items-center">
+          <h1>Hey, I'm Shyam</h1>
+          <h3>And I'm a Web Developer</h3>
         </div>
-    </div>
-    <section class="section section-dark">
-        <ul style="list-style-type: none">
-            <li>I live in Toronto, a city that I love</li>
-            <li>I'm a software consultant and an aspiring Web Developer</li>
-            <li>I specialize in implementing Actimize products that help in detecting financial crimes</li>
-            <li>I can code in Perl, Shell and PL/SQL</li>
-            <li>I like working with data and understanding data relationships</li>
-            <li>I love to travel and my favorite sport is Cricket</li>
+      </div>
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top border-bottom border-light grad">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarDropdown"
+          aria-controls="navbarDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarDropdown">
+          <ul class="nav navbar-nav w-100 d-flex justify-content-around">
+            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#workSection">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#connect">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="row m-0" id="about">
+        <div class="column col-12 col-md-6">
+          <img class="img-thumbnail" src="./assets/images/MyPortfolioPic.jpg" alt="" />
+        </div>
+        <div class="column col-12 col-md-6 d-flex flex-column justify-content-center align-items-start">
+          <p>I live in Toronto, a city that I love</p>
+          <p>I'm a software consultant and an aspiring Web Developer</p>
+          <p>I specialize in implementing Actimize products that help in detecting financial crimes</p>
+          <p>I can code in Perl, Shell and PL/SQL</p>
+          <p>I like working with data and understanding data relationships</p>
+          <p>I love to travel and my favorite sport is Cricket</p>
+        </div>
+      </div>
+
+      <div class="row bgimg2" id="workSection">
+        <div class="column col-12 d-flex justify-content-center align-items-center">
+          <h2 class="capbrdr">My Work</h2>
+        </div>
+      </div>
+
+      <div class="portfolio grad p-2">
+        <div class="row m-2 p-2">
+          <div class="column col-12 col-sm-6 col-md-6 col-lg-3 p-1">
+            <a href="#"><img src="./assets/images/img_1.jpg" alt="" class="img-thumbnail"/></a>
+          </div>
+          <div class="column col-12 col-sm-6 col-md-6 col-lg-3 p-1">
+            <a href="https://github.com/toshyamsundar/Word_Guess" target="_blank">
+              <img src="./assets/images/Word_Guess.PNG" alt="" class="img-thumbnail" />
+              <!-- <div class="overlay">
+                <span>overlay content</span>
+              </div> -->
+            </a>
+          </div>
+          <div class="column col-12 col-sm-6 col-md-6 col-lg-3 p-1">
+            <a href="https://github.com/toshyamsundar/toshyamsundar.github.io" target="_blank"
+              ><img src="./assets/images/My_Portfolio.PNG" alt="" class="img-thumbnail"
+            /></a>
+          </div>
+          <div class="column col-12 col-sm-6 col-md-6 col-lg-3 p-1">
+            <a href="#"><img src="./assets/images/img_4.jpeg" alt="" class="img-thumbnail"/></a>
+          </div>
+        </div>
+        <div class="row m-2 p-2">
+          <div class="column col-12 col-sm-6 col-md-6 col-lg-3 p-1">
+            <a href="#"><img src="./assets/images/img_3.jpg" alt="" class="img-thumbnail"/></a>
+          </div>
+          <div class="column col-12 col-sm-6 col-md-6 col-lg-3 p-1">
+            <a href="https://github.com/toshyamsundar/Psychic_Game" target="_blank"
+              ><img src="./assets/images/Psychic_Game.PNG" alt="" class="img-thumbnail"
+            /></a>
+          </div>
+          <div class="column col-12 col-sm-6 col-md-6 col-lg-3 p-1">
+            <a href="https://github.com/toshyamsundar/HW_01_WireFrame" target="_blank"
+              ><img src="./assets/images/WireFrame.JPG" alt="" class="img-thumbnail"
+            /></a>
+          </div>
+          <div class="column col-12 col-sm-6 col-md-6 col-lg-3 p-1">
+            <a href="#"><img src="./assets/images/img_1.jpg" alt="" class="img-thumbnail"/></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row bgimg3 contact">
+        <div class="column col-12 d-flex justify-content-center align-items-center" id="connect">
+          <a href="https://www.linkedin.com/in/shyam-sunder-lakshmanan/" class="fa fa-linkedin" target="_blank"></a>
+          <a href="#" class="fa fa-envelope"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+        </div>
+      </div>
+
+      <!-- <nav
+        class="navbar navbar-expand-md navbar-dark bg-dark fixed-bottom border-bottom border-light d-none d-md-block footer"
+      >
+        <ul class="nav navbar-nav w-100 d-flex justify-content-around">
+          <li class="nav-item"><i class="fa fa-copyright"></i></li>
         </ul>
-    </section>
-    <div class="pimg2">
-        <div class="caption">
-            <span class="border">My Work</span>
-        </div>
+      </nav> -->
     </div>
-    <section id="workSection">
-        <div class="square_1">
-            <a href="https://toshyamsundar.github.io/" target="_blank">Portfolio</a>
-        </div>
-        <div class="square_1">
-            <a href="https://toshyamsundar.github.io/HW_01_WireFrame/" target="_blank">Wireframe</a>
-        </div>
-        <div class="square_1">
-            <a href="#">More to come!</a>
-        </div>
-    </section>
-    <div class="pimg3">
-        <div class="contact">
-            <a href="https://www.linkedin.com/in/shyam-sunder-lakshmanan/" class="fa fa-linkedin" target="_blank"></a>
-            <a href="#" class="fa fa-envelope"></a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-        </div>
-    </div>
-</body>
-
+  </body>
 </html>
