@@ -104,6 +104,12 @@ p {
 
 .portfolio > .row > .column > a > img:hover {
   box-shadow: 2px 2px 2px rgb(4, 194, 201);
+  transform: rotate(5deg);
+  transition: 0.7s ease;
+}
+
+.portfolio > .row > .column:nth-child(odd) > a > img:hover {
+  box-shadow: 2px 2px 2px rgb(4, 194, 201);
   transform: rotate(-5deg);
   transition: 0.7s ease;
 }
